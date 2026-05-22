@@ -9,5 +9,5 @@ management:
 togglz:
   enabled: true
   features:
-    FIRST_FEATURE:
+    TOGGLE:
       enabled: true
