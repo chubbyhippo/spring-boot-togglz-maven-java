@@ -5,6 +5,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class SecondService {
     public String getText() {
-        return "First Service";
+        return "Second Service";
     }
 }
