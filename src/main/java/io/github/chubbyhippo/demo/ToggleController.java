@@ -27,4 +27,12 @@ public class ToggleController {
         }
         return secondService.getText();
     }
+
+    @GetMapping("/toggle")
+    public String toggle() {
+        var state = featureManager.getFeatureState(TOGGLE);
+        state.setEnabled(!state.isEnabled());
+        featureManager.setFeatureState(state);
+        return "Toggle state changed";
+    }
 }
