@@ -33,6 +33,6 @@ public class ToggleController {
         var state = featureManager.getFeatureState(TOGGLE);
         state.setEnabled(!state.isEnabled());
         featureManager.setFeatureState(state);
-        return "Toggle state changed";
+        return "Toggle state changed to " + state.isEnabled();
     }
 }
